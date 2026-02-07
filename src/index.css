@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  animation: marquee 12s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Manrope", system-ui, -apple-system, sans-serif;
+    background: #050505;
+    color: #f7f2ea;
+    text-rendering: optimizeLegibility;
+  }
+
+  .font-serif {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+  }
+}
+
+::selection {
+  background: rgba(244, 196, 122, 0.3);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9b7b45, #d5b27a);
+  border-radius: 999px;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #9b7b45, #f4c47a);
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  z-index: 50;
+}
+
+/* @theme {
+
+  --color-background: #FFFDF1;
+  --color-foreground: #562F00;
+}
+
+@layer base {
+ 
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: 'Inter', sans-serif;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  .font-serif{
+    font-family: 'Playfair Display', serif;
+
+  }
+
+
+} */
