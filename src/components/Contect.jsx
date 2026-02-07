@@ -51,10 +51,10 @@ const Contect = () => {
 
                 <div className='mt-8 flex flex-col items-center gap-2 text-white text-opacity-70 sm:flex-row sm:gap-6'>
                     <a className='text-sm hover:text-white' href='mailto:hello@yourmail.com'>
-                        hello@yourmail.com
+                        nnnshukla@gmail.com.com
                     </a>
                     <span className='hidden h-1 w-1 rounded-full bg-white bg-opacity-40 sm:inline-block' />
-                    <span className='text-sm'>India, Remote</span>
+                    <span className='text-sm'>Bhopal, India</span>
                 </div>
             </div>
         </section>
