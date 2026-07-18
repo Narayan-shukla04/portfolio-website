@@ -96,7 +96,7 @@ const Navbar = () => {
                   fontFamily: '"Cormorant Garamond", serif',
                 }}
               >
-                Narayanshukla 
+                Narayan Shukla
               </h2>
             </div>
 
