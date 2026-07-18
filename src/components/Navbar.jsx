@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 
 const NAV_LINKS = [
-  { label: 'About',    href: '#about'    },
-  { label: 'Skills',   href: '#skills'   },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
 ]
 
@@ -96,7 +96,7 @@ const Navbar = () => {
                   fontFamily: '"Cormorant Garamond", serif',
                 }}
               >
-                portfolio
+                Narayanshukla 
               </h2>
             </div>
 
