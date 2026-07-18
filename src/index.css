@@ -1,19 +1,6 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.marquee {
-  animation: marquee 12s linear infinite;
-}
 
 @layer base {
   html {
@@ -47,7 +34,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #9b7b45, #d5b27a);
-  border-radius: 999px;
+  border-radius: 100px;
 }
 
 .scroll-progress {
@@ -57,34 +44,20 @@
   height: 3px;
   width: 100%;
   background: linear-gradient(90deg, #9b7b45, #f4c47a);
-  transform: scaleX(0);
   transform-origin: 0% 50%;
   z-index: 50;
 }
 
-/* @theme {
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
 
-  --color-background: #FFFDF1;
-  --color-foreground: #562F00;
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-@layer base {
- 
-
-  html{
-    scroll-behavior: smooth;
-  }
-
-  body{
-    font-family: 'Inter', sans-serif;
-    background: var(--color-background);
-    color: var(--color-foreground);
-  }
-
-  .font-serif{
-    font-family: 'Playfair Display', serif;
-
-  }
-
-
-} */
+.marquee {
+  animation: marquee 12s linear infinite;
+}

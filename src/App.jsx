@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import SmoothScroll from './components/SmoothScroll'
 import Hero from './components/Hero'
 import About from './components/About'
+import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contect from './components/Contect'
 
@@ -45,6 +46,7 @@ const App = () => {
 
       <Hero />
       <About />
+      <Skills />
       <Projects />
       <Contect />
 
